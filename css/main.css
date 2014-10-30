@@ -181,7 +181,7 @@ a {
 	padding-top:150px;	
 }
 body {
-	background-color: #E8EDF0;
+	background: url('../img/HeaderBgMelb.jpg') repeat-x fixed center top;
 }
 
 .main {
@@ -200,7 +200,7 @@ body {
     height: 450px;
     top: 0px;
     width: 100%;
-	background: url('../img/HeaderBgMelb.jpg') repeat-x fixed center top;
+	background-color: rgba(0,0,0,.3);
 }
 
 .accounts
