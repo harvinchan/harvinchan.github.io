@@ -20,7 +20,8 @@
 	padding: 0;
 	*zoom: 1;
 	text-align: center;
-	margin-bottom: 26px;
+	margin-bottom: 1.625em;
+	padding-top:1.625em;
 }
 
 .bx-wrapper img {
