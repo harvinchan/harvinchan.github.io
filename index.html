@@ -26,27 +26,28 @@
     
 </head>
 
-<body id="top">
-    <header class="intro">
+<body >
+
+    <section class="intro" id="top">
         <!--<nav class="desktop" id="cl-effect-14" class="container cl-effect-14">-->
         <!-- Parallax Top -->
 
-        <section class="harvinBlock animated fadeInDown">
+        <div class="harvinBlock animated fadeInDown">
             <h2 class="harvinName">Harvin Chan</h2><span class="hero__snippet">TEST</span>
 
             <div class="accounts">
                 <a class="linkedin" data-username="261245078" href="http://linkedin.com/in/harvinchan">LinkedIn</a>
             </div>
-        </section>
-    </header>
+        </div>
+    </section>
 
-    <main role="main">
+    
         <nav class="bt-menu" id="bt-menu">
             <a class="bt-menu-trigger" href="#"><span>Menu</span></a> <!--<h1 class="logo">Harvin Chan</h1>-->
 
             <ul class="nav">
                 <li class="nav__item">
-                    <a href="#home">HOME</a>
+                    <a href="#top">HOME</a>
                 </li>
 
                 <li class="nav__item">
@@ -58,12 +59,12 @@
                 </li>
             </ul>
         </nav>
-
+<div class="main">
         <section class="hero-DivTitle" id="works">
             <h1 class="hero-DivTitle__title fadeIn">WORKS.</h1>
         </section>
 
-        <div class="container GIP">
+        <section class="container GIP">
         <ul class="fade">
             <li><img src="img/polygon.jpg" title="Funky roots" /></li>
             <li><img src="img/BG2.png" title="The long and winding road" /></li>
@@ -88,9 +89,9 @@
                 </div>
    			<!--</div>-->
        	</div>
-        </div>
+        </section>
         
-        <div class="container harmelaCheska">
+        <section class="container harmelaCheska">
         <ul class="fade">
             <li><img src="img/polygon.jpg" title="Funky roots" /></li>
             <li><img src="img/BG2.png" title="The long and winding road" /></li>
@@ -115,9 +116,9 @@
                 </div>
    			<!--</div>-->
        	</div>
-        </div>
+        </section>
         
-        <div class="container mayopePhoto">
+        <section class="container mayopePhoto">
         <ul class="fade">
             <li><img src="img/polygon.jpg" title="Funky roots" /></li>
             <li><img src="img/BG2.png" title="The long and winding road" /></li>
@@ -142,9 +143,9 @@
                 </div>
    			<!--</div>-->
        	</div>
-        </div>
+        </section>
         
-        <div class="container 4everawesome">
+        <section class="container 4everawesome">
         <ul class="fade">
             <li><img src="img/polygon.jpg" title="Funky roots" /></li>
             <li><img src="img/BG2.png" title="The long and winding road" /></li>
@@ -169,25 +170,25 @@
                 </div>
    			<!--</div>-->
        	</div>
-        </div>
-        <div id="contact">
-           <section class="hero-DivTitle">
+        </section>
+        <section id="contact">
+           <div class="hero-DivTitle">
                 <h1 class="hero-DivTitle__title">CONTACT.</h1>
-            </section>
+            </div>
     
             <div class="containerContact" style="color:#ac9a7c">
                 <i class="fa fa-phone"></i><a href="tel:harmelacheska@gmail.com" style="color:#41403F"> +61432447386</a><br>
                 <i class="fa fa-paper-plane"></i><a href="mailto:harvinchan83@gmail.com" style="color:#41403F"> harvinchan83@gmail.com</a>
             </div>
-        </div>
-
-        <footer id="footer">
+        
+		</section>
+        <section id="footer">
             <div class="container">
                 <p>Copyright (c) 2014 <a href="http://harvinchan.me">Harvin Chan</a><span class="top"><a href="#top">#top</a></span></p>
             </div>
-        </footer>
-    </main>
-    
+        </section>
+
+    </div>
     <!--JS-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="js/jquery.js"></script>
@@ -195,7 +196,8 @@
     <script src="js/parallax-Top.js" type="text/javascript"></script> 
     <script src="js/borderMenu.js" type="text/javascript"></script> 
     <script src="js/classie.js" type="text/javascript"></script> 
-    <script src="js/modernizr.custom.js" type="text/javascript"></script> 
+    <script src="js/modernizr.custom.js" type="text/javascript"></script>
+    <script src="js/jquery.onepage-scroll.min.js"></script>
     <script src="js/script.js"></script>
     
     <!-- Smooth Scrolling -->
@@ -215,6 +217,8 @@
             $('.fade').bxSlider({
 			   	
 			});
+			
+			
         });
     </script>
     <script>
