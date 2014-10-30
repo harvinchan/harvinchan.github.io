@@ -259,44 +259,45 @@ section .accounts a.linkedin {
 }
 
 @media only screen and (min-width: 768px) {
-.visitSiteMobile {
-	display: none;
-}
+	.visitSiteMobile {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 768px) {
-.responsive-col-left h2 {
-	font-size: 1.4375em;
-	font-weight: normal;
-}
-.responsive-col-right {
-	padding-left: 0;
-	padding-top: 2em;
-	width: 90%;
-}
-.responsive-col-left {
-	padding-left: 0px;
-	width: 100%;
-}
-.responsive-col-left {
-	padding-left: 0px;
-}
-.visitSiteDesktop {
-	display: none;
-}
-.visitSiteMobile {
-	padding-top: 2em;
-	display: block;
-}
+	
+	.responsive-col-left h2 {
+		font-size: 1.4375em;
+		font-weight: normal;
+	}
+	.responsive-col-right {
+		padding-left: 0;
+		padding-top: 2em;
+		width: 90%;
+	}
+	.responsive-col-left {
+		padding-left: 0px;
+		width: 100%;
+	}
+	.responsive-col-left {
+		padding-left: 0px;
+	}
+	.visitSiteDesktop {
+		display: none;
+	}
+	.visitSiteMobile {
+		padding-top: 2em;
+		display: block;
+	}
 }
 
 @media only screen and (max-width: 1079px) {
-.workContent {
-	width: 90%;
-}
-.responsive-col-left .responsive-col-right {
-	padding-left: 60px;
-}
+	.workContent {
+		width: 90%;
+	}
+	.responsive-col-left .responsive-col-right {
+		padding-left: 60px;
+	}
 }
 /* eat up all the width when used on mobile 
 @media screen and (max-width: 800px) {
