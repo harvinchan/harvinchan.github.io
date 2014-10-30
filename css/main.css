@@ -178,6 +178,7 @@ body {
 	background: url('../img/HeaderBgMelb.jpg') repeat-x fixed center top;
 }
 .main {
+	margin-top:450px;
 	margin-right: auto;
 	margin-left: auto;
 	width: 100%;
@@ -191,6 +192,7 @@ body {
 	height: 450px;
 	top: 0px;
 	width: 100%;
+	position:fixed;
 	background-color: rgba(0,0,0,.3);
 }
 .accounts {
