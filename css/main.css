@@ -72,7 +72,9 @@ a {
 	height: 40px;
 	line-height: 40px;
 	padding: 0;
+	width:100%;
 	display: inline-block;
+	color:white;
 }
 /* Nav item button */
 .nav__item--btn {

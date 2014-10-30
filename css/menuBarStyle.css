@@ -198,9 +198,9 @@
 }
 
 .bt-menu ul:first-of-type li a {
-	padding: 0 20px;
+	padding: 0;
 	box-shadow: inset 0 1px rgba(0,0,0,0.2);
-	color: #000;
+	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 1em;
@@ -220,7 +220,6 @@
 
 .bt-menu ul li a:before {
 	color: #fff;
-	font-size: 24px;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 }
@@ -229,5 +228,6 @@
 .bt-menu ul:first-of-type li a:focus,
 .bt-menu ul li a:hover:before,
 .bt-menu ul li a:focus:before {
-	color: #AC9A7C;
+	color: #fff;
+	text-align:center;	
 }

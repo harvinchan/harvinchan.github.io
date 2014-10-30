@@ -98,17 +98,17 @@ iframe {
 
 .cl-effect-10 a {
 	overflow: hidden;
-	margin-top: 12px;;
 }
 
 .cl-effect-10 a span {
 	display: block;
-	padding: 10px 20px;
-	background: rgba(0,0,0,.3);
+	text-align:center;
+	background: #fff;
 	-webkit-transition: -webkit-transform 0.3s;
 	-moz-transition: -moz-transform 0.3s;
 	transition: transform 0.3s;
-	color:#fff;
+	color:#000;
+	width:100%;
 }
 
 .cl-effect-10 a::before {
@@ -116,7 +116,7 @@ iframe {
 	top: 0;
 	left: 0;
 	z-index: -1;
-	padding: 10px 20px;
+	text-align:center;
 	width: 100%;
 	height: 100%;
 	background: #AC9A7C;
@@ -187,6 +187,61 @@ iframe {
 .cl-effect-7 a:focus::after {
 	top: 0%;
 	opacity: 1;
+}
+
+/* Effect 2: 3D rolling links, idea from http://hakim.se/thoughts/rolling-links */
+.cl-effect-2 a {
+	line-height: 44px;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	perspective: 1000px;
+}
+
+.cl-effect-2 a span {
+	position: relative;
+	display: inline-block;
+	padding: 0 14px;
+	background: #2195de;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.csstransforms3d .cl-effect-2 a span::before {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #0965a0;
+	content: attr(data-hover);
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+	transition: background 0.3s;
+	-webkit-transform: rotateX(-90deg);
+	-moz-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+}
+
+.cl-effect-2 a:hover span,
+.cl-effect-2 a:focus span {
+	-webkit-transform: rotateX(90deg) translateY(-22px);
+	-moz-transform: rotateX(90deg) translateY(-22px);
+	transform: rotateX(90deg) translateY(-22px);
+}
+
+.csstransforms3d .cl-effect-2 a:hover span::before,
+.csstransforms3d .cl-effect-2 a:focus span::before {
+	background: #28a2ee;	
 }
 
 nav a {
