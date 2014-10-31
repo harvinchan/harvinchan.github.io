@@ -303,6 +303,10 @@ section .accounts a.linkedin {
 		padding-top: 2em;
 		display: block;
 	}
+	.main
+	{
+		margin-bottom:0;	
+	}
 }
 
 @media only screen and (max-width: 1079px) {
