@@ -105,6 +105,8 @@ a {
 	text-align: center;
 	display: block;
 	font-size: 2em;
+	font-weight:400;
+	font-family: 'Exo', sans-serif;
 	line-height: 1em;
 }
 .hero__btn {
@@ -149,13 +151,16 @@ a {
  margin: 20px;
 }
 #footer {
-	color: #ac9a7c;
-	/*border-top: 1px solid #eee;*/
-	font-size: 14px;
-	height: 30px;
-	width: 89%;
-	margin-left: auto;
-	margin-right: auto;
+	clear: both;
+	width: 100%;
+	margin: 0px auto;
+	overflow: hidden;
+	position: fixed;
+	height: 480px;
+	padding: 60px 0px;
+	background: none repeat scroll 0% 0% #fff;
+	display: none;
+	bottom: 0px;
 }
 #footer .top {
 	float: right;
@@ -178,15 +183,13 @@ body {
 	background: url('../img/HeaderBgMelb.jpg') repeat-x fixed center top;
 }
 .main {
-	margin-top:450px;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 440px auto 480px;
 	width: 100%;
-	background: #E8EDF0;
-	/*background: url('../img/natural_paper.png') repeat;*/
+	background: none repeat scroll 0% 0% #E8EDF0;
 	position: relative;
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 	z-index: 3;
+	padding-top: 20px;
 }
 .intro {
 	height: 450px;
@@ -327,4 +330,13 @@ section .accounts a.linkedin {
 
 .visitSiteDesktop {
 	padding-top: .8em;
+}
+
+#copyRight
+{
+	font-family: "Oswald",sans-serif; 
+	text-align:center; 
+	position: absolute; 
+	bottom: 0px; 
+	right: 50%;	
 }
