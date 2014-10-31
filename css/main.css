@@ -172,7 +172,7 @@ a {
 	height: 480px;
 	padding: 20px 0px 60px;
 	background: none repeat scroll 0% 0% #fff;
-	display: none;
+	display:block;
 	bottom: 0px;
 }
 #footer .top {
