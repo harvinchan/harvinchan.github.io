@@ -194,17 +194,55 @@
         
 		</div>
         <section id="footer" style="display:block;">
-            <div class="container">
-            <section id="contact">
-            <div class="hero-DivTitle">
-                <h1 class="hero-DivTitle__title">CONTACT.</h1>
-            </div>
+        <div class="container">
+        <div class="workContent contentContact">
+                <!--<div class="workColumn">-->
 
-            <div class="containerContact" style="color:#ac9a7c">
-                <i class="fa fa-phone"></i><a href="tel:harmelacheska@gmail.com" style="color:#41403F">+61432447386</a><br>
-                <i class="fa fa-paper-plane"></i><a href="mailto:harvinchan83@gmail.com" style="color:#41403F">harvinchan83@gmail.com</a>
+                <div class="responsive-col-left contactDetailsDesktop" style="width:380px;">
+                    <section id="contact">
+                       
+                            <h1 class="ContactFooter">CONTACT.</h1>
+                        
+            
+                        <div class="containerContact" style="color:#ac9a7c">
+                            <p style="margin-bottom:3px;"><i class="fa fa-phone"></i><a href="tel:harmelacheska@gmail.com" style="color:#41403F;"> +61432447386</a></p><br>
+                            <i class="fa fa-paper-plane"></i><a href="mailto:harvinchan83@gmail.com" style="color:#41403F"> harvinchan83@gmail.com</a>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="responsive-col-right contactFormDesktop">
+                    <form action="actions/email.php" method="POST">
+                        <p>
+        
+                            <label for="name">Name:</label>
+                            <input id="name" class="field" placeholder="Name" type="text">
+                        </p>
+                        <p>
+                            <label for="email">Email Address:</label>
+                            <input id="email" class="field" placeholder="Email" type="text">
+                        </p>
+                        <p>
+                            <label for="subject">What can I help with?</label>
+                            <input id="subject" class="field" placeholder="Subject" type="text">
+                        </p>
+                        <p>
+                            <label for="message">The Details:</label>
+                            <textarea id="message" rows="5" cols="100" class="field" placeholder="Message"></textarea>
+                        </p>
+                        <div id="status">
+                            <div class="button">
+                                <button id="submit">Submit</button>
+                                
+                                <div id="success" class="message" style="display:none">Message sent.</div>
+                                <div id="error" class="message" style="display:none;">Something went wrong.</div>
+                            </div>
+                        </div>
+        
+                    </form>
+                </div><!--</div>-->
             </div>
-        </section>
+            
                 <p id="copyRight">&copy 2014</p>
             </div>
         </section>

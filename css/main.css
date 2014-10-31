@@ -1,4 +1,17 @@
 /* Main */
+
+/* Mozilla based browsers */
+::-moz-selection {
+       background-color: #ac9a7c;
+       color: #fff;
+}
+
+/* Works in Safari */
+::selection {
+       background-color: #ac9a7c;
+       color: #fff;
+}
+
 * {
 	-webkit-box-sizing: border-box;
 	-mox-box-sizing: border-box;
@@ -157,7 +170,7 @@ a {
 	overflow: hidden;
 	position: fixed;
 	height: 480px;
-	padding: 60px 0px;
+	padding: 20px 0px 60px;
 	background: none repeat scroll 0% 0% #fff;
 	display: none;
 	bottom: 0px;
@@ -189,7 +202,6 @@ body {
 	position: relative;
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 	z-index: 3;
-	padding-top: 20px;
 }
 .intro {
 	height: 450px;
@@ -256,9 +268,8 @@ section .accounts a.linkedin {
 	display: block;
 }
 #contact {
-	background-color: #FFFFFF;
+	background-color: #FFF;
 	padding-bottom: 1em;
-	padding-top: 1em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -301,6 +312,17 @@ section .accounts a.linkedin {
 	.responsive-col-left .responsive-col-right {
 		padding-left: 60px;
 	}
+	
+	.contactDetailsDesktop
+	{
+		display:none;	
+	}
+	
+	.contactFormDesktop
+	{
+		width: 100%;
+		padding:0;
+	}
 }
 /* eat up all the width when used on mobile 
 @media screen and (max-width: 800px) {
@@ -339,4 +361,83 @@ section .accounts a.linkedin {
 	position: absolute; 
 	bottom: 0px; 
 	right: 50%;	
+}
+
+#footer form
+{
+    display: block;
+    overflow: hidden;
+    width: 500px;
+    margin: 0px auto;	
+}
+
+input, textarea, select {
+    border: 0px none;
+    font-weight:400;
+	font-family: 'Exo', sans-serif;
+	text-transform:uppercase;
+    padding: 10px 0px;
+    background: none repeat scroll 0% 0% transparent;
+    color: #444948;
+    border-radius: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+}
+
+input {
+    resize: none;
+}
+
+input, textarea {
+    padding-left: 0.7em;
+}
+
+label {
+    display: none;
+}
+
+form p {
+    padding-top: 20px;
+    display: block;
+    margin: 0px auto;
+    border-bottom: 3px solid #444948;
+}
+
+#submit {
+    display: block;
+    cursor: pointer;
+    margin: 0px auto;
+    color: #444948;
+    border: 3px solid #444948;
+    box-sizing: border-box;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 20px 0px;
+    background: none repeat scroll 0% 0% transparent;
+    font-weight:400;
+	font-family: 'Exo', sans-serif;
+    text-align: center;
+}
+
+a, button {
+    outline: 0px none;
+}
+
+div.button {
+    padding-top: 60px;
+}
+
+.ContactFooter
+{
+	font-family: "Open Sans Condensed",sans-serif;
+	font-size: 4em;
+	font-weight: 400;
+	letter-spacing: 5px;	
+}
+
+.contentContact
+{
+	border:none;
+	padding:0;
 }
