@@ -398,6 +398,13 @@ div.button {
 	#footer form {
 		width: 100%;	
 	}
+	.main{
+		margin-bottom:0;	
+	}
+	#footer
+	{
+		display:none;	
+	}
 }
 
 @media only screen and (max-width: 1079px) {
