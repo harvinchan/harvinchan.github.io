@@ -24,18 +24,18 @@
 </head>
 
 <body>
-    <section class="intro" id="top">
+    <header class="intro" id="top">
         <!--<nav class="desktop" id="cl-effect-14" class="container cl-effect-14">-->
         <!-- Parallax Top -->
 
         <div class="harvinBlock fadeIn">
             <h2 class="harvinName">Harvin Chan</h2><span class="hero__snippet">Web Developer</span>
 
-            <div class="accounts">
-                <a class="linkedin" data-username="261245078" href="http://linkedin.com/in/harvinchan">LinkedIn</a>
+            <div class="accounts hi-icon-effect-2 hi-icon-effect-2a">
+                <a class="fa-linkedin" data-username="261245078" href="http://linkedin.com/in/harvinchan">LinkedIn</a>
             </div>
         </div>
-    </section>
+    </header>
 
     <nav class="bt-menu" id="bt-menu">
         <a class="bt-menu-trigger" href="#"><span>Menu</span></a> <!--<h1 class="logo">Harvin Chan</h1>-->
@@ -193,7 +193,7 @@
 
         
 		</div>
-        <section id="footer">
+        <section id="footer" style="display:none;">
         <div class="container">
         <div class="workContent contentContact">
                 <!--<div class="workColumn">-->
@@ -212,7 +212,8 @@
                 </div>
 
                 <div class="responsive-col-right contactFormDesktop">
-                    <form action="actions/email.php" method="POST">
+                <!--<form action="actions/email.php" method="POST">-->
+                    <form action="#" method="POST">
                         <p>
         
                             <label for="name">Name:</label>
@@ -259,6 +260,27 @@
             $('.fade').bxSlider({
                 
             });
+			
+			if($(window).width() > 640)
+	{
+
+		var headerHeight = $('header').height();
+
+		$(document).scroll(function() {
+			var pos = $(document).scrollTop();
+
+			$('#footer').css('display', ((pos > headerHeight) ? 'block' : 'none'));
+
+				var parallax = parseInt(pos * -0.3) + 'px';
+				var rgba		 = (pos / headerHeight) * 0.4;
+
+				$('.harvinBlock').css('margin-top', parallax);
+				$('header').css('background', 'rgba(0,0,0,' + rgba);
+
+			
+		});
+	
+	}
             
             
         });

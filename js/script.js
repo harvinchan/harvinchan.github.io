@@ -5,3 +5,4 @@
     var photoSlider = new WallopSlider('.photo-slider');
 
 })();
+

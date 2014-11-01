@@ -208,7 +208,6 @@ body {
 	top: 0px;
 	width: 100%;
 	position:fixed;
-	background-color: rgba(0,0,0,.3);
 }
 .accounts {
 	text-align: center;
@@ -271,92 +270,6 @@ section .accounts a.linkedin {
 	background-color: #FFF;
 	padding-bottom: 1em;
 }
-
-@media only screen and (min-width: 768px) {
-	.visitSiteMobile {
-		display: none;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	
-	.responsive-col-left h2 {
-		font-size: 1.4375em;
-		font-weight: normal;
-	}
-	.responsive-col-right {
-		padding-left: 0;
-		padding-top: 2em;
-		width: 90%;
-	}
-	.responsive-col-left {
-		padding-left: 0px;
-		width: 100%;
-	}
-	.responsive-col-left {
-		padding-left: 0px;
-	}
-	.visitSiteDesktop {
-		display: none;
-	}
-	.visitSiteMobile {
-		padding-top: 2em;
-		display: block;
-	}
-}
-
-@media only screen and (max-width: 1079px) {
-	.workContent {
-		width: 90%;
-	}
-	.responsive-col-left .responsive-col-right {
-		padding-left: 60px;
-	}
-	
-	.contactDetailsDesktop
-	{
-		display:none;	
-	}
-	
-	.contactFormDesktop
-	{
-		width: 100%;
-		padding:0;
-	}
-	#footer
-	{
-		display:none;	
-	}
-	.main
-	{
-		margin-bottom:0;	
-	}
-}
-/* eat up all the width when used on mobile 
-@media screen and (max-width: 800px) {
-	.responsive-col-left
-{
-	width: 100%;
-}
-
-.responsive-col-right
-{
-	width: 100%;
-}
-}
-
-/* To make the height adjust automatically on mobile view
-@media screen and (min-width: 800px) {
-	.responsive-col-left
-{
-	height: 50vh;
-}
-
-.responsive-col-right
-{
-	height: 50vh;
-}
-} */
 
 .visitSiteDesktop {
 	padding-top: .8em;
@@ -449,3 +362,85 @@ div.button {
 	border:none;
 	padding:0;
 }
+
+@media only screen and (min-width: 768px) {
+	.visitSiteMobile {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	
+	.responsive-col-left h2 {
+		font-size: 1.4375em;
+		font-weight: normal;
+	}
+	.responsive-col-right {
+		padding-left: 0;
+		padding-top: 2em;
+		width: 90%;
+	}
+	.responsive-col-left {
+		padding-left: 0px;
+		width: 100%;
+	}
+	.responsive-col-left {
+		padding-left: 0px;
+	}
+	.visitSiteDesktop {
+		display: none;
+	}
+	.visitSiteMobile {
+		padding-top: 2em;
+		display: block;
+	}
+	
+	#footer form {
+		width: 100%;	
+	}
+}
+
+@media only screen and (max-width: 1079px) {
+	.workContent {
+		width: 90%;
+	}
+	.responsive-col-left .responsive-col-right {
+		padding-left: 60px;
+	}
+	
+	.contactDetailsDesktop
+	{
+		display:none;	
+	}
+	
+	.contactFormDesktop
+	{
+		width: 100%;
+		padding:0;
+	}
+}
+/* eat up all the width when used on mobile 
+@media screen and (max-width: 800px) {
+	.responsive-col-left
+{
+	width: 100%;
+}
+
+.responsive-col-right
+{
+	width: 100%;
+}
+}
+
+/* To make the height adjust automatically on mobile view
+@media screen and (min-width: 800px) {
+	.responsive-col-left
+{
+	height: 50vh;
+}
+
+.responsive-col-right
+{
+	height: 50vh;
+}
+} */
