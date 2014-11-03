@@ -213,7 +213,7 @@
 
                 <div class="responsive-col-right contactFormDesktop">
                 <!--<form action="actions/email.php" method="POST">-->
-                    <form action="#" method="POST">
+                    <form action="http://www.emailmeform.com/builder/form/7Qf276cdSs0Py5d" method="POST">
                         <p>
         
                             <label for="name">Name:</label>
@@ -233,7 +233,7 @@
                         </p>
                         <div id="status">
                             <div class="button">
-                                <button id="submit">Submit</button>
+                                <button id="submit" onClick="sendMail(); return false">Submit</button>
                                 
                                 <div id="success" class="message" style="display:none">Message sent.</div>
                                 <div id="error" class="message" style="display:none;">Something went wrong.</div>
@@ -284,6 +284,24 @@
             
             
         });
+		
+		function sendMail() {
+			
+			var fields = {
+			name	:	$("#name"),
+			email	:	$("#email"),
+			subject	:	$("#subject"),
+			message	:	$("#message")
+			};
+		
+			var link = "mailto:harvinchan83@example.com"
+					 + "?cc=" + fields.email.val()
+					 + "&subject=" + fields.name.val() + " - " + fields.subject.val()
+					 + "&body=" + fields.message.val()
+			;
+		
+			window.location.href = link;
+		}
     </script> <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
