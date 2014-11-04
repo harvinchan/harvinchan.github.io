@@ -301,8 +301,8 @@
 			  type: "POST",
 			  url: "http://flypaperplane.com/api",
 			  data: { 
-				email: "test@test.com", 
-				message: "FROM"
+				email: fields.email.val(), 
+				message: fields.name.val() + " - " + fields.subject.val() + " - " + fields.message.val()
 			  },
 			  success: function(response) {
 				console.log(response);
