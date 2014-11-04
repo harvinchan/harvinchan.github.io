@@ -198,7 +198,7 @@ body {
 .main {
 	margin: 440px auto 480px;
 	width: 100%;
-	background: none repeat scroll 0% 0% #E8EDF0;
+	background: none repeat scroll 0% 0% #fff;
 	position: relative;
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 	z-index: 3;
@@ -230,12 +230,14 @@ section .accounts a.linkedin {
 /*Work Responsive Columns*/
 
 .workContent {
-	border-top: 1px solid #a5a195;
-	padding: 1.625em 0 7.5em;
-	zoom: 1;
+	border-top: 1px solid #A5A195;
+	padding: 1.625em 0px 7.5em;
 	width: 62.5em;
-	margin: 0 auto;
-	color: #625C48;
+	margin: 0px auto;
+	font-family: "Open Sans Condensed",sans-serif;
+	font-weight: 600;
+	color: #000;
+	letter-spacing: 1px;
 }
 .workColumn {
 	background-color: #FFF;
@@ -248,10 +250,19 @@ section .accounts a.linkedin {
 	margin-right: auto;
 }
 .responsive-col-left {
+	font-size: 22px;
+	line-height: 25px;
+	width: 320px;
+	float: left;
+	display: block;
+	margin-right: 20px;
+}
+.responsive-col-left-footer {
 	font-size: 18px;
 	line-height: 25px;
 	width: 320px;
 	float: left;
+	color:#AC9A7C;
 	display: block;
 	margin-right: 20px;
 }
