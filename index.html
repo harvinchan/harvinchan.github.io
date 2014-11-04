@@ -302,7 +302,10 @@
 			  url: "http://flypaperplane.com/api",
 			  data: { 
 				email: fields.email.val(), 
-				message: fields.name.val() + " - " + fields.subject.val() + " - " + fields.message.val()
+				name: fields.name.val(),
+				subject: fields.subject.val(),
+				message: fields.message.val()
+				
 			  },
 			  success: function(response) {
 				console.log(response);
