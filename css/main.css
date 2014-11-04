@@ -335,7 +335,7 @@ form p {
     padding-top: 20px;
     display: block;
     margin: 0px auto;
-    border-bottom: 3px solid #444948;
+    border-bottom: 2px solid #444948;
 }
 
 #submit {
@@ -343,7 +343,7 @@ form p {
     cursor: pointer;
     margin: 0px auto;
     color: #444948;
-    border: 3px solid #444948;
+    border: 2px solid #444948;
     box-sizing: border-box;
     width: 100%;
     text-transform: uppercase;
@@ -375,6 +375,45 @@ div.button {
 	border:none;
 	padding:0;
 }
+
+/* Contact Form Error and Success Message */
+
+#submit:hover {
+			background: #444948;
+			color: #fff;
+		}
+
+	.error {
+		border: 1px solid red;
+	}
+
+	select {
+	}
+
+	label {
+		display: none;
+	}
+	
+	.message {
+		height: 29px; 
+		font-size: 11px;
+		line-height: 11px;
+		padding: 17px 15px 0 15px;
+		text-align: center;
+		background: none;
+		font: normal 14px ProximaNovaBold, "Helvetica Neue", Helvetica, sans-serif;
+		text-transform: uppercase;
+	}
+	
+	#success { 
+		border: 1px solid #5bbd72; 
+		color: #5bbd72;
+	}
+	
+	#error { 
+		border: 1px solid red;
+		color: red;
+	}
 
 @media only screen and (min-width: 768px) {
 	.visitSiteMobile {

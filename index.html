@@ -288,7 +288,9 @@
             
         });
 		
-		function sendMail() {
+		var error = false;
+		
+		$("#submit").click(function(e) {
 			
 			var fields = {
 			name	:	$("#name"),
@@ -296,7 +298,43 @@
 			subject	:	$("#subject"),
 			message	:	$("#message")
 			};
+			
+			if(fields.name.val()=="") { fields.name.addClass("error"); error = true; }
+			else
+			{
+				fields.name.removeClass("error"); 
+				error = false;
+			}
+			if(fields.email.val()=="") { 
+			fields.email.addClass("error"); 
+			error = true; 
+			} else {
+			var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+			if(!reg.test(fields.email.val())) {
+				fields.email.addClass("error"); 
+				error = true;
+			}
+			else
+			{
+				fields.email.removeClass("error"); 
+				error = false;
+			}
+			
+		}
+		if(fields.subject.val()=="") { fields.subject.addClass("error"); error = true; }
+		else
+			{
+				fields.subject.removeClass("error"); 
+				error = false;
+			}
+		if(fields.message.val()=="") { fields.message.addClass("error"); error = true; }
+		else
+			{
+				fields.message.removeClass("error"); 
+				error = false;
+			}
 		
+		if(!error) {
 			$.ajax({
 			  type: "POST",
 			  url: "http://flypaperplane.com/api",
@@ -313,6 +351,8 @@
 			  dataType: "json"
 			});
 		}
+		e.preventDefault()
+		});
     </script> 
 	<script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
