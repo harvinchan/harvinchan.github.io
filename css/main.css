@@ -302,6 +302,7 @@ section .accounts a.linkedin {
     width: 500px;
     margin: 0px auto;	
 	font-family: "Exo",sans-serif;
+	font-weight:lighter;
 }
 
 input, textarea, select {
