@@ -262,7 +262,7 @@ section .accounts a.linkedin {
 	line-height: 25px;
 	width: 320px;
 	float: left;
-	color:#AC9A7C;
+	color:#000;
 	display: block;
 	margin-right: 20px;
 }
@@ -280,6 +280,9 @@ section .accounts a.linkedin {
 #contact {
 	background-color: #FFF;
 	padding-bottom: 1em;
+	text-align:center;
+	margin-top:4em;
+	border: 2px solid black !important;
 }
 
 .visitSiteDesktop {
@@ -365,9 +368,10 @@ div.button {
 .ContactFooter
 {
 	font-family: "Open Sans Condensed",sans-serif;
-	font-size: 4em;
-	font-weight: 400;
+	font-size: 3em;
+	font-weight: 700;
 	letter-spacing: 5px;	
+	color:black;
 }
 
 .contentContact
