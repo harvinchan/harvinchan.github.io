@@ -43,15 +43,15 @@
         <nav class="cl-effect-10" id="cl-effect-10">
             <ul class="nav">
                 <li class="nav__item">
-                    <a data-hover="HOME" href="#top"><span>HOME</span></a>
+                    <a data-hover="BACK TO TOP" class="homeBtn" href="#top"><span>TOP</span></a>
                 </li>
 
                 <li class="nav__item">
-                    <a data-hover="WORKS" href="#works"><span>WORKS</span></a>
+                    <a data-hover="PORTFOLIO" href="#works"><span>WORKS</span></a>
                 </li>
 
                 <li class="nav__item">
-                    <a data-hover="CONTACT" href="#contact"><span>CONTACT</span></a>
+                    <a data-hover="CONTACT" class="contactBtn" href="#contact"><span>CONTACT</span></a>
                 </li>
             </ul>
         </nav>
@@ -263,6 +263,17 @@
             $('.fade').bxSlider({
                 
             });
+			
+			// Scroll Function for the Contact button on the Menu Bar
+			$('.contactBtn').click(function () {
+			  var WH = $(window).height();  
+			  var SH = $('body')[0].scrollHeight;
+			  $('html, body').stop().animate({scrollTop: SH+WH}, 1500);
+			});
+			
+			$('.homeBtn').click(function () {
+			  $('html, body').stop().animate({scrollTop: 0}, 1500);
+			});
 			
 			if($(window).width() > 0)
 	{
