@@ -165,8 +165,8 @@ iframe {
 	font-size: 0px;
 	cursor: pointer;
 	margin: 15px 30px;
-	width: 90px;
-	height: 90px;
+	width: 60px;
+	height: 60px;
 	border-radius: 50%;
 	text-align: center;
 	position: relative;
@@ -189,8 +189,8 @@ iframe {
 .hi-icon:before {
 	font-family: 'ecoicon';
 	speak: none;
-	font-size: 48px;
-	line-height: 90px;
+	font-size: 25px;
+	line-height: 60px;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -200,13 +200,14 @@ iframe {
 }
 
 .hi-icon-linkedin:before {
-	content:"\f08c";
+	content:"\F08C";
+	font-family: FontAwesome;
 }
 
 
 /* Effect 2 */
 .hi-icon-effect-2 .hi-icon {
-	color: #eea303;
+	color: #000;
 	box-shadow: 0 0 0 3px #fff;
 	-webkit-transition: color 0.3s;
 	-moz-transition: color 0.3s;
@@ -226,7 +227,7 @@ iframe {
 
 /* Effect 2a */
 .hi-icon-effect-2a .hi-icon:hover {
-	color: #eea303;
+	color: #000;
 }
 
 .hi-icon-effect-2a .hi-icon:hover:after {
