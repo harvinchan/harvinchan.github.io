@@ -164,7 +164,7 @@ iframe {
 	display: inline-block;
 	font-size: 0px;
 	cursor: pointer;
-	margin: 15px 30px;
+	margin: 15px 15px;
 	width: 60px;
 	height: 60px;
 	border-radius: 50%;
@@ -197,6 +197,11 @@ iframe {
 	text-transform: none;
 	display: block;
 	-webkit-font-smoothing: antialiased;
+}
+
+.hi-icon-mail:before {
+	content:"\f003";
+	font-family: FontAwesome;
 }
 
 .hi-icon-linkedin:before {
