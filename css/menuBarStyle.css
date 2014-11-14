@@ -64,7 +64,6 @@
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	user-select: none;
 	-webkit-transition: background-color 0.3s;
 	transition: background-color 0.3s;
 }

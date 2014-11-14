@@ -6,12 +6,6 @@
        color: #fff;
 }
 
-/* Works in Safari */
-::selection {
-       background-color: #ac9a7c;
-       color: #fff;
-}
-
 * {
 	-webkit-box-sizing: border-box;
 	-mox-box-sizing: border-box;
@@ -90,7 +84,7 @@ a {
 /* Nav item button */
 .nav__item--btn {
 	display: inline-block;
-	padding: 0 10pxi;
+	padding: 0 10px;
 	font-size: 14px;
 	line-height: 38px;
 	padding: 0 20px;
@@ -159,10 +153,7 @@ a {
 	display: inline-block;
 	margin: auto 5px;
 }
-/*  */
-. {
- margin: 20px;
-}
+
 #footer {
 	clear: both;
 	width: 100%;
