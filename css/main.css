@@ -409,6 +409,10 @@ div.button {
 		border: 1px solid red;
 		color: red;
 	}
+.workContent .responsive-col-right ul {
+	margin-top: 0px;
+}
+
 
 @media only screen and (min-width: 768px) {
 	.visitSiteMobile {
