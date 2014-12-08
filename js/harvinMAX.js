@@ -10,6 +10,10 @@ $(document).ready(function(){
 				
             });
 			
+			$('#nav-icon2').click(function(){
+				$(this).toggleClass('open');
+			});
+			
 			// code for arrow navigation up and down $(document).smartscroll(
 //              {
 //                section: '.section', 
@@ -46,7 +50,7 @@ $(document).ready(function(){
 			$('#footer').css('display', ((pos > headerHeight) ? 'block' : 'none'));
 
 				var parallax = parseInt(pos * -0.3) + 'px';
-				var rgba		 = (pos / headerHeight) * 0.4;
+				var rgba		 = ((pos / headerHeight) * 0.4) + 0.2;
 
 				$('.harvinBlock').css('margin-top', parallax);
 				$('header').css('background', 'rgba(0,0,0,' + rgba);
